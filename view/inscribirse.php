@@ -24,7 +24,7 @@
                 </div>
         </div>
         <h2>Rellena tus datos para inscribirte</h2>
-        <form action="inscribirse.php" method="POST" class="formu" style="margin-left: 430px; padding-top: 30px;" onsubmit="return validacionForm()">
+        <form action="inscribirse.php" method="POST" class="formu" style="margin-left: 430px; padding-top: 30px;" onsubmit="return validarFor()">
             <button onclick="return validarDNI()">Validar DNI</button><input class="dni" type="text" id="DNI_parti" name="DNI_parti" placeholder="DNI..">
             <input class="nom" type="text" id="nom_parti" name="nom_parti" placeholder="nombre.."><br>
             <input class="ape" type="text" id="apellido_parti" name="apellido_parti" placeholder="Primer apellido..">
@@ -55,5 +55,12 @@
             echo $ParticipanteDAO->insertarParticipante();
         }
         ?>
+        <br><br><br>
+        <footer>
+            <h3><strong>Contacto</strong></h3>
+            <p>12 de octubre del 2020</p>
+            <p>Jesuitas Bellvitge JOAN XXIII</p>
+            <p>Creadora: Judit Fernández Vico</p>
+        </footer>
     </body>
 </html>
