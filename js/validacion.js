@@ -131,3 +131,17 @@ function validarFor(){
     
     return false;
 }
+
+function validarFor2(){
+    var inputs=document.getElementsByClassName('validar');
+    for (let i = 0; i < inputs.length; i++) {
+        /*if(inputs[i].type=="text" && inputs[i].value == ''){
+            inputs[i].style.borderColor='red';
+        }else if (inputs[i].type=="text" && inputs[i].value !== ''){
+            inputs[i].style.borderColor='white';
+        }*/
+        console.log(inputs[i].type);
+    }
+    
+    return false;
+}

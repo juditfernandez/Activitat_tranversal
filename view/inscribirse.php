@@ -24,19 +24,19 @@
                 </div>
         </div>
         <h2>Rellena tus datos para inscribirte</h2>
-        <form action="inscribirse.php" method="POST" class="formu" style="margin-left: 430px; padding-top: 30px;" onsubmit="return validarFor()">
-            <button onclick="return validarDNI()">Validar DNI</button><input class="dni" type="text" id="DNI_parti" name="DNI_parti" placeholder="DNI..">
-            <input class="nom" type="text" id="nom_parti" name="nom_parti" placeholder="nombre.."><br>
-            <input class="ape" type="text" id="apellido_parti" name="apellido_parti" placeholder="Primer apellido..">
-            <input class="ape" type="text" id="apellido2_parti" name="apellido2_parti" placeholder="Segundo apellido.."><br>
-            <input class="for" type="text" id="email_parti" name="email_parti" placeholder="email..">
+        <form action="inscribirse.php" method="POST" class="formu" style="margin-left: 430px; padding-top: 30px;" onsubmit="return validarFor2()">
+            <button onclick="return validarDNI()">Validar DNI</button><input class="dni validar" type="text" id="DNI_parti" name="DNI_parti" placeholder="DNI..">
+            <input class="nom validar"  type="text" id="nom_parti" name="nom_parti" placeholder="nombre.."><br>
+            <input class="ape validar" type="text" id="apellido_parti" name="apellido_parti" placeholder="Primer apellido..">
+            <input class="ape validar" type="text" id="apellido2_parti" name="apellido2_parti" placeholder="Segundo apellido.."><br>
+            <input class="for validar" type="email" id="email_parti" name="email_parti" placeholder="email..">
             <select class="for" type="text" id="sexo_parti" name="sexo_parti">
                 <option>mujer</option>
                 <option>hombre</option>
                 <option>niños/niñas</option>
                 <option>no decir</option>
             </select>
-            <input class="for" style="width: 186px" type="date" id="fecha_nacimiento" name="fecha_nacimiento"><br>
+            <input class="for validar" style="width: 186px" type="date" id="fecha_nacimiento" name="fecha_nacimiento"><br>
             <select class="for" type="text" id="edad_parti" name="edad_parti" placeholder="email..">
                 <option>0-6</option>
                 <option>7-18</option>
