@@ -24,8 +24,8 @@
                 </div>
         </div>
         <h2>Rellena tus datos para inscribirte</h2>
-        <form action="inscribirse.php" method="POST" class="formu" style="margin-left: 430px; padding-top: 30px;" onsubmit="return validarFor2()">
-            <button onclick="return validarDNI()">Validar DNI</button><input class="dni validar" type="text" id="DNI_parti" name="DNI_parti" placeholder="DNI..">
+        <form action="inscribirse.php" method="POST" class="formu" style="margin-left: 430px; padding-top: 30px;" onsubmit="return validarFormu()">
+            <button>Validar DNI</button><input class="dni" type="text" id="DNI_parti" name="DNI_parti" placeholder="DNI..">
             <input class="nom validar"  type="text" id="nom_parti" name="nom_parti" placeholder="nombre.."><br>
             <input class="ape validar" type="text" id="apellido_parti" name="apellido_parti" placeholder="Primer apellido..">
             <input class="ape validar" type="text" id="apellido2_parti" name="apellido2_parti" placeholder="Segundo apellido.."><br>
@@ -37,15 +37,17 @@
                 <option>no decir</option>
             </select>
             <input class="for validar" style="width: 186px" type="date" id="fecha_nacimiento" name="fecha_nacimiento"><br>
-            <select class="for" type="text" id="edad_parti" name="edad_parti" placeholder="email..">
+            <!---<select class="for" type="text" id="edad_parti" name="edad_parti" placeholder="email..">
                 <option>0-6</option>
                 <option>7-18</option>
                 <option>19-30</option>
                 <option>31-60</option>
                 <option>61 o mas</option>
-            </select>
+            </select>--->
             <input class="for" style="width: 186px" type="number" id="num_dorsal" name="num_dorsal" placeholder="Dorsal..."><br>
-            <div id="message"></div><br>
+            <div id="errores"></div>
+            <div id="message"></div>
+            <input type="hidden" value="" name="edad" id="edad">
             <input class="aceptar" type="submit" value="Aceptar" name="submit">
         </form>
         <?php

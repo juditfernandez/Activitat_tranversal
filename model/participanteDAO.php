@@ -24,7 +24,7 @@ class ParticipanteDAO {
         $apellido2=$_POST['apellido2_parti'];
         $email=$_POST['email_parti'];
         $fecha=$_POST['fecha_nacimiento'];
-        $edad=$_POST['edad_parti'];
+        $edad=$_POST['edad'];
         $sexo=$_POST['sexo_parti'];
         $dorsal=$_POST['num_dorsal'];   
         $sentencia1->bindParam(1,$DNI);
